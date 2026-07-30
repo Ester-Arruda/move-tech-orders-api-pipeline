@@ -12,6 +12,8 @@ spec:
       labels:
         app: orders-api
     spec:
+      imagePullSecrets:
+      - name: magalu-registry
       containers:
       - name: orders-api
         image: $IMAGE
